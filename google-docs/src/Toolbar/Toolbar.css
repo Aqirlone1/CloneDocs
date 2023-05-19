@@ -1,0 +1,23 @@
+.textarea {
+  margin-left: 20px;
+  width: 75rem;
+  height: 31rem;
+}
+
+.newfile {
+  background: #fff;
+  border: 1px solid #9fa2a6;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  height: 200px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.googleplusicon {
+  height: 180px;
+  width: 150px;
+}

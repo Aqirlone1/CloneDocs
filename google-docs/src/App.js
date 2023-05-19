@@ -7,7 +7,7 @@ import Sidebar from "./sidebar/sideBar";
 export default function App() {
   const [header, setHeader] = useState(true)
   const handleTextArea =(value)=>{
-    console.log('clicked', value)
+    console.log('clicked', value) //commit
     setHeader(value)
   }
   return (

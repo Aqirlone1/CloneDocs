@@ -1,3 +1,11 @@
+.toolbar {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #eef4f8;
+  border-radius: 3rem;
+}
+
+
 .textarea {
   margin-left: 20px;
   width: 75rem;
@@ -20,4 +28,34 @@
 .googleplusicon {
   height: 180px;
   width: 150px;
+}
+
+.inputbox {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.inputbox:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: center;
+}
+
+.navigationBar button {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 5px; 
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navigationBar button:hover {
+  background-color: rgb(211, 211, 211);
+  border-radius: 5px;
 }

@@ -16,7 +16,7 @@ const Sidebar = (props) => {
     window.onpopstate = handleBackClick;
 
     return () => {
-      window.onpopstate = null; // Cleanup the event handler when the component unmounts
+      window.onpopstate = null;
     };
   }, []);
 
@@ -27,7 +27,8 @@ const Sidebar = (props) => {
   return (
     <>
       <div className="container-fluid mt-3">
-      {props.header && (<nav className="navbar navbar-expand-lg navbar-light bg-white shadow-md">
+      {props.header && (
+      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-md">
           <div className="container-fluid p-2">
             <div className="btn" onClick={toggleSidebar}>
               <FontAwesomeIcon icon={faBars} />
@@ -42,6 +43,13 @@ const Sidebar = (props) => {
             </a>
             <div className="form-inline ml-auto"></div>
           </div>
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+              </form>
+            </div>
+            </nav>
         </nav>)}
         <div className={`sidebar ${isOpen == true ? "active" : ""}`}>
           <div className="sd-header">

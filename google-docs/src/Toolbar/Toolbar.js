@@ -8,6 +8,23 @@ import {
   faAlignLeft,
   faAlignCenter,
   faAlignRight,
+  fa7,
+  fa0,
+  faAngleLeft,
+  faAnglesRight,
+  faAngleRight,
+  faArrowAltCircleLeft,
+  faArrowLeftRotate,
+  faArrowRightArrowLeft,
+  faArrowLeft,
+  faArrowRotateRight,
+  faArrowRotateBackward,
+  faCircleChevronLeft,
+  faPager,
+  faPrint,
+  faUndo,
+  faPaintBrush,
+  faPaintRoller,
 } from "@fortawesome/free-solid-svg-icons";
 import './Toolbar.css'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -90,6 +107,18 @@ const Toolbar = props => {
     </div>
   </nav>
     <div className="toolbar">
+      <button onClick={() => handleButtonClick("bold")}>
+        <FontAwesomeIcon icon={faArrowLeftRotate} />
+      </button>
+      <button onClick={() => handleButtonClick("bold")}>
+        <FontAwesomeIcon icon={faArrowRotateRight} />
+      </button>
+      <button onClick={() => handleButtonClick("bold")}>
+        <FontAwesomeIcon icon={faPrint} />
+      </button>
+      <button onClick={() => handleButtonClick("bold")}>
+        <FontAwesomeIcon icon={faPaintRoller} />
+      </button>
       <button onClick={() => handleButtonClick("bold")}>
         <FontAwesomeIcon icon={faBold} />
       </button>
